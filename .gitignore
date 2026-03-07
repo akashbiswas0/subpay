@@ -1,0 +1,15 @@
+node_modules
+frontend/node_modules
+artifacts
+cache
+coverage
+typechain-types
+.env
+frontend/.env.local
+frontend/.next
+frontend/out
+frontend/.papi
+dist
+.next
+zoo/
+zwa/
