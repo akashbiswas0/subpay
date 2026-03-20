@@ -1,18 +1,18 @@
-# PolyPay
+# SubPay
 
-> The Payment & DeFi Layer of Polkadot — cross-chain payments, bill splitting, and shareable payment links built natively on Passet Hub.
+> The Payment & DeFi Layer of Polkadot, cross-chain payments, bill splitting, and shareable payment links built natively on Passet Hub.
 
 ---
 
 ## About the Project
 
-PolyPay is a full-stack DeFi payment dApp on Polkadot's EVM-compatible testnet (Passet Hub, Chain ID `420420417`). It lets users send PAS, USDt, and USDC to any address, split bills with friends via on-chain group expense tracking, teleport PAS across 9 Paseo parachains using XCM, and share payment requests via PolkaLinks — all from a single clean interface connected to MetaMask.
+SubPay is a full-stack DeFi payment dApp on Polkadot's EVM compatible testnet (Passet Hub, Chain ID `420420417`). It lets users send PAS, USDt, and USDC to any address, split bills with friends via on-chain group expense tracking, teleport PAS across 5 Paseo parachains using XCM, and share payment requests via PolkaLinks — all from a single clean interface connected to MetaMask.
 
 ---
 
 ## Vision
 
-Make Polkadot the default payments layer for Web3. PolyPay replaces fragmented wallet UX, manual address sharing, and off-chain bill splitting with a unified, always-on payment experience — natively cross-chain, natively stablecoin.
+Make Polkadot the default payments layer for Web3. SubPay replaces fragmented wallet UX, manual address sharing, and off chain bill splitting with a unified, always-on payment experience, natively cross-chain, natively stablecoin
 
 ---
 
@@ -60,13 +60,13 @@ sequenceDiagram
 ```
 
 **Supported destination parachains:**
-`PeoplePaseo` · `AssetHubPaseo` · `BridgeHubPaseo` · `CoretimePaseo` · `NeuroWebPaseo` · `HeimaPaseo` · `KiltPaseo` · `LaosPaseo` · `PAssetHub`
+`PeoplePaseo` · `AssetHubPaseo` · `BridgeHubPaseo` · `CoretimePaseo` · `NeuroWebPaseo`
 
 ### Stack
 
 | Layer | Tech |
 |---|---|
-| Frontend | Next.js 15, Wagmi, RainbowKit, ethers.js v6, Tailwind CSS |
+| Frontend | Next.js 16, Wagmi, RainbowKit, ethers.js v6, Tailwind CSS |
 | Contracts | Solidity 0.8.20, Hardhat |
 | XCM | @paraspell/sdk (server-side), Sr25519 signer |
 | Real-time | Convex (group chat + payment links) |
@@ -74,30 +74,3 @@ sequenceDiagram
 
 ---
 
-## Roadmap
-
-### Phase 1 — Hackathon MVP ✅
-- P2P payments in PAS, USDt, USDC
-- XCM cross-chain teleports to 9 parachains
-- On-chain group bill splitting + debt settlement
-- Real-time group chat (Convex)
-- PolkaLinks — shareable payment links with QR codes
-- Live fiat currency converter (8 currencies)
-
-### Phase 2 — Q3 2026
-- `@polypay/sdk` — Blinks SDK for developers (`createPaymentLink()`, `verifyPayment()`, React hooks)
-- Recurring payments — automated subscription-style transfers
-- KILT Web3Name — pay by `@name` instead of `0x...` address
-- Polkadot mainnet deployment
-
-### Phase 3 — Q4 2026
-- Token swap before payment (HydrationPaseo DEX integration)
-- Bifrost liquid staking — yield on idle PAS balances
-- Mobile app (React Native)
-- Business payroll — batch pay 50+ addresses in one transaction
-
-### Phase 4 — 2027
-- Cross-chain group settlement via XCM
-- Escrow payments for freelancers
-- Fiat on/off ramp integration
-- DAO treasury management with on-chain voting
