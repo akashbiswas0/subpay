@@ -23,7 +23,7 @@ Make Polkadot the default payments layer for Web3. SubPay replaces fragmented wa
 | No unified payment UX on Polkadot EVM | Single interface for PAS + USDt + USDC payments |
 | XCM is inaccessible to regular users | One-click cross-chain send via hybrid relayer |
 | No on-chain group expense management | GroupSplit contract with debt tracking + real-time chat |
-| No shareable payment links on Polkadot | PolkaLinks — shareable URLs + QR codes |
+| No shareable payment links on Polkadot | PolkaLinks : shareable URLs + QR codes |
 | Fiat users don't know PAS value | Live converter across 8 fiat currencies via CoinGecko |
 
 ---
@@ -36,8 +36,8 @@ Make Polkadot the default payments layer for Web3. SubPay replaces fragmented wa
 |---|---|---|
 | `PaymentRouter.sol` | `0xCc05B4aD5D96abb333c16CA7f4345DaeF7a62F4F` | P2P payments, bill split, XCM dispatch |
 | `GroupSplit.sol` | `0x84a87Cd93F3A5C81Ba3179Aeff6ACC9e994bdA1c` | Group expenses, debt tracking, settlement |
-| USDT Precompile | `0x000007C000000000000000000000000001200000` | ERC-20 interface for Polkadot USDt |
-| USDC Precompile | `0x0000053900000000000000000000000001200000` | ERC-20 interface for Polkadot USDC |
+| USDT Precompile | `0x000007C000000000000000000000000001200000` | ERC20 interface for Polkadot USDt |
+| USDC Precompile | `0x0000053900000000000000000000000001200000` | ERC20 interface for Polkadot USDC |
 | XCM Precompile | `0x00000000000000000000000000000000000A0000` | Substrate XCM exposed to EVM |
 
 ### XCM Cross-Chain Flow
